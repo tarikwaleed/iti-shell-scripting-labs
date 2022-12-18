@@ -75,21 +75,34 @@
 # }
 
 #Problem 7
-BEGIN	{
-    FS=":";
-    max=0;
-    line="";
-}
-{
-    if($3>max){
-        max=$3;
-        line=$0;
-    }
+# BEGIN	{
+#     FS=":";
+#     max=0;
+#     line="";
+# }
+# {
+#     if($3>max){
+#         max=$3;
+#         line=$0;
+#     }
 
 
 
-}
-END	{
-    print line;
-}
+# }
+# END	{
+#     print line;
+# }
 
+
+#Problem8
+
+# BEGIN	{
+#     FS=":";
+#     runningSum=0;
+# }
+# {
+#     sum+=$4;
+# }
+# END	{
+#     print sum;
+# }
