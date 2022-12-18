@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-if [[ $* == 0 ]];then
-ls
-# ls $HOME # didnt' work
-# eval "ls ~" #didn't work too
-# ls ~ #didn't work too
-# ls /home/tarikwaleed #didn't work too
+if [[ $# == 0 ]]; then
+    # ls
+    ls $HOME #
+# eval "ls ~"
+# ls ~
+# ls /home/tarikwaleed
 
 else
-ls $1
+    ls $1
 fi
