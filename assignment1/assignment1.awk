@@ -21,88 +21,85 @@
 #############################  AWK ################################
 #Problem1
 
-# {
-#     print
+{
+    print;
 
-# }
+}
 
 # Problem 2
-# BEGIN	{
-#     FS=":";
+BEGIN	{
+    FS=":";
     
-# }
-# {
-#     print NR,$1,$5,$6;
-# }
+}
+{
+    print NR,$1,$5,$6;
+}
 
-# Problem 3
-# BEGIN	{
-#     FS=":";
+Problem 3
+BEGIN	{
+    FS=":";
     
-# }
-# {
-#     if($3>500){
-#     print NR,$1,$5,$6;
+}
+{
+    if($3>500){
+    print NR,$1,$5,$6;
 
-#     }
-# }
+    }
+}
 
 
 # Problem 4
-# BEGIN	{
-#     FS=":";
+BEGIN	{
+    FS=":";
     
-# }
-# {
-#     if($3==500){
-#     print NR,$1,$5,$6;
+}
+{
+    if($3==500){
+    print NR,$1,$5,$6;
 
-#     }
-# }
+    }
+}
 
 # Problem 5
-# {
-#     if(NR>=5 && NR<=15){
-#         print NR,$0;
-#     }
-# }
+{
+    if(NR>=5 && NR<=15){
+        print NR,$0;
+    }
+}
 
-#Problem 6
-# {
-#     gsub(/lp/,"mylp");
-#     print;
+# Problem 6
+{
+    gsub(/lp/,"mylp");
+    print;
 
-# }
+}
 
 #Problem 7
-# BEGIN	{
-#     FS=":";
-#     max=0;
-#     line="";
-# }
-# {
-#     if($3>max){
-#         max=$3;
-#         line=$0;
-#     }
-
-
-
-# }
-# END	{
-#     print line;
-# }
+BEGIN	{
+    FS=":";
+    max=0;
+    line="";
+}
+{
+    if($3>max){
+        max=$3;
+        line=$0;
+    }
+}
+END	{
+    print line;
+}
 
 
 #Problem8
 
-# BEGIN	{
-#     FS=":";
-#     runningSum=0;
-# }
-# {
-#     sum+=$4;
-# }
-# END	{
-#     print sum;
-# }
+BEGIN	{
+    FS=":";
+    runningSum=0;
+}
+{
+    sum+=$4;
+}
+END	{
+    print sum;
+}
