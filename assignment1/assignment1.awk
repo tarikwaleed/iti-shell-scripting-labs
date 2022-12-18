@@ -78,27 +78,18 @@
 BEGIN	{
     FS=":";
     max=0;
-    count=0;
+    line="";
 }
-# {
-#     if($3>max){
-#         max=$3;
-#         count=NR;
-#     }
-
-
-
-# }
 {
-    print $NR;
+    if($3>max){
+        max=$3;
+        line=$0;
+    }
+
+
+
 }
-# {
-#     if (NR==count) {
-#     print NR,$0;
-        
-#     }
-# }
 END	{
-    print NR;
+    print line;
 }
 
