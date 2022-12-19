@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "Press [CTRL+C] to stop.."
+while :
+do
+  read -p "Element $i:" element
+  sum+=$element
+done
+echo "${sum}"
+
+
